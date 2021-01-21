@@ -6,15 +6,15 @@
 <header th:replace="fragments :: header"></header>
 
 <!--<ul>-->
-<table class="table">
+<table class="table table-striped">
     <thead>
         <tr>
             <th>Name</th>
         </tr>
     </thead>
-    <th:block th:each="event : ${events}">
-        <tr th:text="${event}"></tr>
-    </th:block>
+    <tr th:each="event : ${events}">
+        <td th:text="${event}"></td>
+    </tr>
 </table>
 
 <!--</ul>-->
